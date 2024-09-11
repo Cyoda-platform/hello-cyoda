@@ -83,13 +83,7 @@ class HttpClientSupplier(private val connectionProperties: ClientConnectionPrope
             }
         }
 
-
-
-
-
     @Serializable
     data class LoginBody(val username: String, val password: String)
 
-    @Serializable
-    data class TokenStorage(var token: String, var refreshToken: String)
 }

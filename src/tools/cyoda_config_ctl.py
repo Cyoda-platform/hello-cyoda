@@ -4,7 +4,6 @@ import argparse
 import os
 import sys
 from enum import Enum
-from getpass import getpass
 
 import requests
 import json
