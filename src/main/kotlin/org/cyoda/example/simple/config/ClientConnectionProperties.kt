@@ -1,5 +1,6 @@
 package org.cyoda.example.simple.config
 
+import jakarta.annotation.PostConstruct
 import org.springframework.boot.context.properties.ConfigurationProperties
 
 /**
@@ -12,8 +13,8 @@ class ClientConnectionProperties {
     var apiUrl: String = "http://localhost:8082/api"
 
     // These can normally stay at their defaults
-    var loginUrl: String = "$apiUrl/auth/login"
-    var refreshUrl: String = "$apiUrl/auth/token"
+    var loginUrl: String = ""
+    var refreshUrl: String = ""
 
     // Replace with your default user, e.g. demo.user and its password
     // How client nodes securely connect to Cyoda will probably change in the near future.
@@ -24,5 +25,11 @@ class ClientConnectionProperties {
     var grpcServer = "localhost"
     var grpcServerPort: Int = 443
     var grpcServerUseTls: Boolean = true
+
+    @PostConstruct
+    fun setDefaults() {
+        if (loginUrl.isBlank() ) loginUrl = "$apiUrl/auth/login"
+        if (refreshUrl.isBlank() ) refreshUrl = "$apiUrl/auth/token"
+    }
 
 }
