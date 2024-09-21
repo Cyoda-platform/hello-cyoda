@@ -199,7 +199,7 @@ class DelegatingProcessor(
             logger.info { "Start Processing" }
             try {
                 processors[request.processorName]
-                    ?.process(client.ktorClient, request)
+                    ?.process(client, request)
                     ?: request.asResponse().apply {
                         this.error = Error().apply {
                             code = "UNKNOWN PROCESSOR"

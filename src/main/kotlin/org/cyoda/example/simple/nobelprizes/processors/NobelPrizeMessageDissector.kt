@@ -3,7 +3,6 @@ package org.cyoda.example.simple.nobelprizes.processors
 import com.fasterxml.jackson.databind.node.ArrayNode
 import com.fasterxml.jackson.databind.node.ObjectNode
 import io.github.oshai.kotlinlogging.KotlinLogging
-import io.ktor.client.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
 import kotlinx.coroutines.async
@@ -18,8 +17,7 @@ import org.cyoda.cloud.api.event.processing.EntityProcessorCalculationRequest
 import org.cyoda.cloud.api.event.processing.EntityProcessorCalculationResponse
 import org.cyoda.example.simple.Processor
 import org.cyoda.example.simple.asResponse
-import org.cyoda.example.simple.config.ClientConnectionProperties
-import org.cyoda.example.simple.integration.publish
+import org.cyoda.example.simple.integration.CyodaHttpClient
 import org.cyoda.example.simple.nobelprizes.model.NobelPrize
 import org.springframework.stereotype.Component
 import java.util.*
@@ -27,7 +25,7 @@ import java.util.*
 val log = KotlinLogging.logger { }
 
 @Component
-class NobelPrizeMessageDissector(val connectionProps: ClientConnectionProperties) : Processor {
+class NobelPrizeMessageDissector : Processor {
     override val name = "Process Nobel Prize Dataset"
 
     private val json = Json {
@@ -36,7 +34,7 @@ class NobelPrizeMessageDissector(val connectionProps: ClientConnectionProperties
     }
 
 
-    override suspend fun process(client: HttpClient,request: EntityProcessorCalculationRequest): EntityProcessorCalculationResponse =
+    override suspend fun process(client: CyodaHttpClient, request: EntityProcessorCalculationRequest): EntityProcessorCalculationResponse =
         coroutineScope {
 
             require(request.payload.data is ObjectNode) {
@@ -60,7 +58,7 @@ class NobelPrizeMessageDissector(val connectionProps: ClientConnectionProperties
             allPrizes.asFlowOfChunkedNobelPrizes(dataSetId,1200).map { prizes: List<NobelPrize> ->
                 async {
                     log.info { "Publishing ${prizes.size} Nobel prizes in a single transaction" }
-                    prizes to client.publish(prizes,"prize",1,connectionProps.apiUrl)
+                    prizes to client.publish(prizes,"prize",1)
                 }
             }.collect {
                 val result = it.await()
