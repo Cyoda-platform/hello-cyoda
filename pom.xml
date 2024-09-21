@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.cyoda.example</groupId>
-    <artifactId>caas-hello-world</artifactId>
+    <artifactId>hello-cyoda</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>caas-hello-world</name>
+    <name>hello-cyoda</name>
     <description>A simple example on how to connect to Cyoda as client compute node</description>
 
     <properties>
