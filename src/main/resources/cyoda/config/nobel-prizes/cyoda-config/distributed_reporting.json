@@ -1,1 +1,1457 @@
-{"@bean": "com.cyoda.service.api.beans.ReportDefinitionContainer", "data": {"@meta": "List", "value": []}}
+{
+  "@bean": "com.cyoda.service.api.beans.ReportDefinitionContainer",
+  "data": {
+    "@meta": "List",
+    "value": [
+      {
+        "@bean": "com.cyoda.service.api.beans.ReportDefinitionItem",
+        "name": "TreeNodeEntities",
+        "owner": "CYODA",
+        "userId": "009896b2-0000-1000-8080-808080808080",
+        "reportDefinition": {
+          "description": "",
+          "requestClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+          "condition": {
+            "@bean": "com.cyoda.core.conditions.GroupCondition",
+            "operator": "AND",
+            "conditions": [
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.GreaterThan",
+                "fieldName": "creationDate",
+                "operation": "GREATER_THAN",
+                "rangeField": "false",
+                "value": {
+                  "@type": "java.util.Date",
+                  "value": "2024-01-01T00:00:00.000-08:00"
+                }
+              }
+            ]
+          },
+          "pointTime": "2199-12-31T13:00:00.000-08:00",
+          "valuationPointTime": "2020-01-27T03:09:28.778-08:00",
+          "columns": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "id"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "creationDate"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "path"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "depth"
+            }
+          ],
+          "sorting": [],
+          "grouping": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "depth"
+            }
+          ],
+          "summary": [
+            [
+              {
+                "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+                "name": "id"
+              },
+              [
+                "COUNT"
+              ]
+            ]
+          ],
+          "colDefs": [
+            {
+              "fullPath": "id",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "id",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "creationDate",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "creationDate",
+                    "type": "java.util.Date"
+                  }
+                ]
+              },
+              "colType": "java.util.Date"
+            },
+            {
+              "fullPath": "path",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "path",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "state",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "state",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "depth",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "depth",
+                    "type": "java.lang.Integer"
+                  }
+                ]
+              },
+              "colType": "java.lang.Integer"
+            },
+            {
+              "fullPath": "entityModelVersion",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "entityModelVersion",
+                    "type": "java.lang.Integer"
+                  }
+                ]
+              },
+              "colType": "java.lang.Integer"
+            }
+          ],
+          "aliasDefs": [],
+          "hierarhyEnable": false,
+          "reportVersion": 0,
+          "singletonReport": true
+        }
+      },
+      {
+        "@bean": "com.cyoda.service.api.beans.ReportDefinitionItem",
+        "name": "TableEntityContainers",
+        "owner": "CYODA",
+        "userId": "009896b2-0000-1000-8080-808080808080",
+        "reportDefinition": {
+          "description": "",
+          "requestClass": "com.cyoda.tdb.model.table.TableEntityContainer",
+          "condition": {
+            "@bean": "com.cyoda.core.conditions.GroupCondition",
+            "operator": "AND",
+            "conditions": [
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.GreaterThan",
+                "fieldName": "creationDate",
+                "operation": "GREATER_THAN",
+                "rangeField": "false",
+                "value": {
+                  "@type": "java.util.Date",
+                  "value": "2024-01-01T00:00:00.000-08:00"
+                }
+              }
+            ]
+          },
+          "pointTime": "2199-12-31T13:00:00.000-08:00",
+          "valuationPointTime": "2020-01-27T03:09:28.778-08:00",
+          "columns": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "creationDate"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "id"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "tableEntities.[*]@net#cyoda#saas#model#TableRow.tableName"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "tableEntities.[*]@net#cyoda#saas#model#TableRow.compositeKey"
+            }
+          ],
+          "sorting": [],
+          "grouping": [],
+          "summary": [],
+          "colDefs": [
+            {
+              "fullPath": "creationDate",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntityContainer",
+                    "path": "creationDate",
+                    "type": "java.util.Date"
+                  }
+                ]
+              },
+              "colType": "java.util.Date"
+            },
+            {
+              "fullPath": "id",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntityContainer",
+                    "path": "id",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "state",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntityContainer",
+                    "path": "state",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "tableEntities.[*]@net#cyoda#saas#model#TableRow.tableName",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntityContainer",
+                    "path": "tableEntities.[*]@net#cyoda#saas#model#TableRow.tableName",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "tableEntities.[*]@net#cyoda#saas#model#TableRow.compositeKey",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntityContainer",
+                    "path": "tableEntities.[*]@net#cyoda#saas#model#TableRow.compositeKey",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            }
+          ],
+          "aliasDefs": [],
+          "hierarhyEnable": false,
+          "reportVersion": 0,
+          "singletonReport": true
+        }
+      },
+      {
+        "@bean": "com.cyoda.service.api.beans.ReportDefinitionItem",
+        "name": "Nobel Prizes",
+        "owner": "CYODA",
+        "userId": "009896b2-0000-1000-8080-808080808080",
+        "reportDefinition": {
+          "description": "",
+          "requestClass": "com.cyoda.tdb.model.table.TableEntity",
+          "condition": {
+            "@bean": "com.cyoda.core.conditions.GroupCondition",
+            "operator": "OR",
+            "conditions": []
+          },
+          "pointTime": "2199-12-31T13:00:00.000-08:00",
+          "valuationPointTime": "2020-01-27T03:09:28.778-08:00",
+          "columns": [],
+          "sorting": [],
+          "grouping": [],
+          "summary": [],
+          "colDefs": [],
+          "aliasDefs": [],
+          "hierarhyEnable": false,
+          "reportVersion": 0,
+          "singletonReport": false
+        }
+      },
+      {
+        "@bean": "com.cyoda.service.api.beans.ReportDefinitionItem",
+        "name": "LEI Records",
+        "owner": "CYODA",
+        "userId": "009896b2-0000-1000-8080-808080808080",
+        "reportDefinition": {
+          "description": "",
+          "requestClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+          "condition": {
+            "@bean": "com.cyoda.core.conditions.GroupCondition",
+            "operator": "AND",
+            "conditions": [
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.GreaterThan",
+                "fieldName": "creationDate",
+                "operation": "GREATER_THAN",
+                "rangeField": "false",
+                "value": {
+                  "@type": "java.util.Date",
+                  "value": "2024-01-01T00:00:00.000-08:00"
+                }
+              },
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.Equals",
+                "fieldName": "entityModelClassId.name",
+                "operation": "EQUALS",
+                "rangeField": "false",
+                "value": {
+                  "@type": "String",
+                  "value": "gleif"
+                },
+                "queryable": true
+              }
+            ]
+          },
+          "pointTime": "2199-12-31T13:00:00.000-08:00",
+          "valuationPointTime": "2020-01-27T03:09:28.778-08:00",
+          "columns": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "id"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportAliasColumn",
+              "name": "entity:legaladdress:city"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "creationDate"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "path"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "parent"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "entityModelVersion"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "entityModelClassId.name"
+            }
+          ],
+          "sorting": [],
+          "grouping": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            }
+          ],
+          "summary": [
+            [
+              {
+                "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+                "name": "id"
+              },
+              [
+                "COUNT"
+              ]
+            ]
+          ],
+          "colDefs": [
+            {
+              "fullPath": "id",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "id",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "creationDate",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "creationDate",
+                    "type": "java.util.Date"
+                  }
+                ]
+              },
+              "colType": "java.util.Date"
+            },
+            {
+              "fullPath": "path",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "path",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "state",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "state",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "parent",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "parent",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "entityModelVersion",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "entityModelVersion",
+                    "type": "java.lang.Integer"
+                  }
+                ]
+              },
+              "colType": "java.lang.Integer"
+            },
+            {
+              "fullPath": "entityModelClassId.name",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "entityModelClassId",
+                    "type": "java.util.UUID"
+                  },
+                  {
+                    "rootClass": "com.cyoda.tdb.model.metadata.EntityModel",
+                    "path": "name",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            }
+          ],
+          "aliasDefs": [
+            {
+              "name": "entity:legaladdress:city",
+              "aliasPaths": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportAliasPathDef[]",
+                "value": [
+                  {
+                    "colDef": {
+                      "fullPath": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[.Entity.LegalAddress.City]",
+                      "parts": {
+                        "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                        "value": [
+                          {
+                            "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                            "path": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.['[']",
+                            "type": "java.lang.String"
+                          }
+                        ]
+                      },
+                      "colType": "java.lang.String"
+                    },
+                    "mapperClass": "com.cyoda.core.reports.aliasmappers.BasicMapper"
+                  }
+                ]
+              },
+              "aliasType": "java.lang.String"
+            }
+          ],
+          "hierarhyEnable": false,
+          "reportVersion": 0,
+          "singletonReport": true
+        }
+      },
+      {
+        "@bean": "com.cyoda.service.api.beans.ReportDefinitionItem",
+        "name": "LEI Records London",
+        "owner": "CYODA",
+        "userId": "009896b2-0000-1000-8080-808080808080",
+        "reportDefinition": {
+          "description": "",
+          "requestClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+          "condition": {
+            "@bean": "com.cyoda.core.conditions.GroupCondition",
+            "operator": "AND",
+            "conditions": [
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.GreaterThan",
+                "fieldName": "creationDate",
+                "operation": "GREATER_THAN",
+                "rangeField": "false",
+                "value": {
+                  "@type": "java.util.Date",
+                  "value": "2024-01-01T00:00:00.000-08:00"
+                }
+              },
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.Equals",
+                "fieldName": "entityModelClassId.name",
+                "operation": "EQUALS",
+                "rangeField": "false",
+                "value": {
+                  "@type": "String",
+                  "value": "gleif"
+                },
+                "queryable": true
+              }
+            ]
+          },
+          "pointTime": "2199-12-31T13:00:00.000-08:00",
+          "valuationPointTime": "2020-01-27T03:09:28.778-08:00",
+          "columns": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "id"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportAliasColumn",
+              "name": "village"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "creationDate"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "path"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "parent"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "entityModelVersion"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "entityModelClassId.name"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[*]"
+            }
+          ],
+          "sorting": [],
+          "grouping": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            }
+          ],
+          "summary": [
+            [
+              {
+                "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+                "name": "id"
+              },
+              [
+                "COUNT"
+              ]
+            ]
+          ],
+          "colDefs": [
+            {
+              "fullPath": "id",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "id",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "creationDate",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "creationDate",
+                    "type": "java.util.Date"
+                  }
+                ]
+              },
+              "colType": "java.util.Date"
+            },
+            {
+              "fullPath": "path",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "path",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "state",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "state",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "parent",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "parent",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "entityModelVersion",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "entityModelVersion",
+                    "type": "java.lang.Integer"
+                  }
+                ]
+              },
+              "colType": "java.lang.Integer"
+            },
+            {
+              "fullPath": "entityModelClassId.name",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "entityModelClassId",
+                    "type": "java.util.UUID"
+                  },
+                  {
+                    "rootClass": "com.cyoda.tdb.model.metadata.EntityModel",
+                    "path": "name",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[*]",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[*]",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            }
+          ],
+          "aliasDefs": [
+            {
+              "name": "village",
+              "aliasPaths": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportAliasPathDef[]",
+                "value": [
+                  {
+                    "colDef": {
+                      "fullPath": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[.Entity.LegalAddress.City]",
+                      "parts": {
+                        "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                        "value": [
+                          {
+                            "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                            "path": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[.Entity.LegalAddress.City]",
+                            "type": "java.lang.String"
+                          }
+                        ]
+                      },
+                      "colType": "java.lang.String"
+                    },
+                    "mapperClass": "com.cyoda.core.reports.aliasmappers.BasicMapper"
+                  }
+                ]
+              },
+              "aliasType": "java.lang.String"
+            }
+          ],
+          "hierarhyEnable": false,
+          "reportVersion": 0,
+          "singletonReport": true
+        }
+      },
+      {
+        "@bean": "com.cyoda.service.api.beans.ReportDefinitionItem",
+        "name": "Root TreeNodeEntities",
+        "owner": "CYODA",
+        "userId": "009896b2-0000-1000-8080-808080808080",
+        "reportDefinition": {
+          "description": "",
+          "requestClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+          "condition": {
+            "@bean": "com.cyoda.core.conditions.GroupCondition",
+            "operator": "AND",
+            "conditions": [
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.GreaterThan",
+                "fieldName": "creationDate",
+                "operation": "GREATER_THAN",
+                "rangeField": "false",
+                "value": {
+                  "@type": "java.util.Date",
+                  "value": "2024-01-01T00:00:00.000-08:00"
+                }
+              },
+              {
+                "@bean": "com.cyoda.core.conditions.nonqueryable.IsNull",
+                "fieldName": "parent",
+                "operation": "IS_NULL",
+                "rangeField": "false"
+              },
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.Equals",
+                "fieldName": "entityModelClassId.name",
+                "operation": "EQUALS",
+                "rangeField": "false",
+                "value": {
+                  "@type": "String",
+                  "value": "gleif"
+                },
+                "queryable": true
+              }
+            ]
+          },
+          "pointTime": "2199-12-31T13:00:00.000-08:00",
+          "valuationPointTime": "2020-01-27T03:09:28.778-08:00",
+          "columns": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "id"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "creationDate"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "path"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "parent"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "entityModelClassId.name"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "entityModelVersion"
+            }
+          ],
+          "sorting": [],
+          "grouping": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            }
+          ],
+          "summary": [
+            [
+              {
+                "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+                "name": "id"
+              },
+              [
+                "COUNT"
+              ]
+            ]
+          ],
+          "colDefs": [
+            {
+              "fullPath": "id",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "id",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "creationDate",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "creationDate",
+                    "type": "java.util.Date"
+                  }
+                ]
+              },
+              "colType": "java.util.Date"
+            },
+            {
+              "fullPath": "path",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "path",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "state",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "state",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "parent",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "parent",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "entityModelVersion",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "entityModelVersion",
+                    "type": "java.lang.Integer"
+                  }
+                ]
+              },
+              "colType": "java.lang.Integer"
+            },
+            {
+              "fullPath": "entityModelClassId.name",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                    "path": "entityModelClassId",
+                    "type": "java.util.UUID"
+                  },
+                  {
+                    "rootClass": "com.cyoda.tdb.model.metadata.EntityModel",
+                    "path": "name",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            }
+          ],
+          "aliasDefs": [],
+          "hierarhyEnable": false,
+          "reportVersion": 0,
+          "singletonReport": true
+        }
+      },
+      {
+        "@bean": "com.cyoda.service.api.beans.ReportDefinitionItem",
+        "name": "TableEntities",
+        "owner": "CYODA",
+        "userId": "009896b2-0000-1000-8080-808080808080",
+        "reportDefinition": {
+          "description": "",
+          "requestClass": "com.cyoda.tdb.model.table.TableEntity",
+          "condition": {
+            "@bean": "com.cyoda.core.conditions.GroupCondition",
+            "operator": "AND",
+            "conditions": [
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.GreaterThan",
+                "fieldName": "creationDate",
+                "operation": "GREATER_THAN",
+                "rangeField": "false",
+                "value": {
+                  "@type": "java.util.Date",
+                  "value": "2023-01-01T00:00:00.000-08:00"
+                }
+              }
+            ]
+          },
+          "pointTime": "2199-12-31T13:00:00.000-08:00",
+          "valuationPointTime": "2020-01-27T03:09:28.778-08:00",
+          "columns": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "tableRow@net#cyoda#saas#model#TableRow.tableName"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "tableRow@net#cyoda#saas#model#TableRow.compositeKey"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "id"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "creationDate"
+            }
+          ],
+          "sorting": [],
+          "grouping": [],
+          "summary": [],
+          "colDefs": [
+            {
+              "fullPath": "creationDate",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntity",
+                    "path": "creationDate",
+                    "type": "java.util.Date"
+                  }
+                ]
+              },
+              "colType": "java.util.Date"
+            },
+            {
+              "fullPath": "id",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntity",
+                    "path": "id",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "state",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntity",
+                    "path": "state",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "tableRow@net#cyoda#saas#model#TableRow.compositeKey",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntity",
+                    "path": "tableRow@net#cyoda#saas#model#TableRow.compositeKey",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "tableRow@net#cyoda#saas#model#TableRow.tableName",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "com.cyoda.tdb.model.table.TableEntity",
+                    "path": "tableRow@net#cyoda#saas#model#TableRow.tableName",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            }
+          ],
+          "aliasDefs": [],
+          "hierarhyEnable": false,
+          "reportVersion": 0,
+          "singletonReport": true
+        }
+      },
+      {
+        "@bean": "com.cyoda.service.api.beans.ReportDefinitionItem",
+        "name": "EdgeMessages",
+        "owner": "CYODA",
+        "userId": "009896b2-0000-1000-8080-808080808080",
+        "reportDefinition": {
+          "description": "",
+          "requestClass": "net.cyoda.saas.message.model.EdgeMessage",
+          "condition": {
+            "@bean": "com.cyoda.core.conditions.GroupCondition",
+            "operator": "AND",
+            "conditions": [
+              {
+                "@bean": "com.cyoda.core.conditions.queryable.GreaterThan",
+                "fieldName": "creationDate",
+                "operation": "GREATER_THAN",
+                "rangeField": "false",
+                "value": {
+                  "@type": "java.util.Date",
+                  "value": "2024-01-01T00:00:00.000-08:00"
+                }
+              }
+            ]
+          },
+          "pointTime": "2199-12-31T13:00:00.000-08:00",
+          "valuationPointTime": "2020-01-27T03:09:28.778-08:00",
+          "columns": [
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "creationDate"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "id"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "header@net#cyoda#saas#message#model#EdgeMessageHeader.subject"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "header@net#cyoda#saas#message#model#EdgeMessageHeader.contentEncoding"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "header@net#cyoda#saas#message#model#EdgeMessageHeader.contentType"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "header@net#cyoda#saas#message#model#EdgeMessageHeader.correlationId"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "header@net#cyoda#saas#message#model#EdgeMessageHeader.messageId"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "header@net#cyoda#saas#message#model#EdgeMessageHeader.recipient"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "header@net#cyoda#saas#message#model#EdgeMessageHeader.replyTo"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "header@net#cyoda#saas#message#model#EdgeMessageHeader.userId"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "state"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "payloadId.id"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "payloadId.text"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "payloadId.contentType"
+            },
+            {
+              "@bean": "com.cyoda.core.reports.columns.ReportSimpleColumn",
+              "name": "payloadId.charset"
+            }
+          ],
+          "sorting": [],
+          "grouping": [],
+          "summary": [],
+          "colDefs": [
+            {
+              "fullPath": "creationDate",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "creationDate",
+                    "type": "java.util.Date"
+                  }
+                ]
+              },
+              "colType": "java.util.Date"
+            },
+            {
+              "fullPath": "id",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "id",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "header@net#cyoda#saas#message#model#EdgeMessageHeader.subject",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "header@net#cyoda#saas#message#model#EdgeMessageHeader.subject",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "header@net#cyoda#saas#message#model#EdgeMessageHeader.contentEncoding",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "header@net#cyoda#saas#message#model#EdgeMessageHeader.contentEncoding",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "header@net#cyoda#saas#message#model#EdgeMessageHeader.contentType",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "header@net#cyoda#saas#message#model#EdgeMessageHeader.contentType",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "header@net#cyoda#saas#message#model#EdgeMessageHeader.correlationId",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "header@net#cyoda#saas#message#model#EdgeMessageHeader.correlationId",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "header@net#cyoda#saas#message#model#EdgeMessageHeader.messageId",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "header@net#cyoda#saas#message#model#EdgeMessageHeader.messageId",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "header@net#cyoda#saas#message#model#EdgeMessageHeader.recipient",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "header@net#cyoda#saas#message#model#EdgeMessageHeader.recipient",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "header@net#cyoda#saas#message#model#EdgeMessageHeader.replyTo",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "header@net#cyoda#saas#message#model#EdgeMessageHeader.replyTo",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "header@net#cyoda#saas#message#model#EdgeMessageHeader.userId",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "header@net#cyoda#saas#message#model#EdgeMessageHeader.userId",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "state",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "state",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "payloadId.id",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "payloadId",
+                    "type": "java.util.UUID"
+                  },
+                  {
+                    "rootClass": "com.cyoda.plugins.datasource.entity.blob.content.CyodaBlobEntity",
+                    "path": "id",
+                    "type": "java.util.UUID"
+                  }
+                ]
+              },
+              "colType": "java.util.UUID"
+            },
+            {
+              "fullPath": "payloadId.text",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "payloadId",
+                    "type": "java.util.UUID"
+                  },
+                  {
+                    "rootClass": "com.cyoda.plugins.datasource.entity.blob.content.CyodaBlobEntity",
+                    "path": "text",
+                    "type": "java.lang.Boolean"
+                  }
+                ]
+              },
+              "colType": "java.lang.Boolean"
+            },
+            {
+              "fullPath": "payloadId.contentType",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "payloadId",
+                    "type": "java.util.UUID"
+                  },
+                  {
+                    "rootClass": "com.cyoda.plugins.datasource.entity.blob.content.CyodaBlobEntity",
+                    "path": "contentType",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            },
+            {
+              "fullPath": "payloadId.charset",
+              "parts": {
+                "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                "value": [
+                  {
+                    "rootClass": "net.cyoda.saas.message.model.EdgeMessage",
+                    "path": "payloadId",
+                    "type": "java.util.UUID"
+                  },
+                  {
+                    "rootClass": "com.cyoda.plugins.datasource.entity.blob.content.CyodaBlobEntity",
+                    "path": "charset",
+                    "type": "java.lang.String"
+                  }
+                ]
+              },
+              "colType": "java.lang.String"
+            }
+          ],
+          "aliasDefs": [],
+          "hierarhyEnable": false,
+          "reportVersion": 0,
+          "singletonReport": true
+        }
+      }
+    ]
+  }
+}

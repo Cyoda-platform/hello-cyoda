@@ -1,1 +1,1572 @@
-{"@bean": "com.cyoda.core.model.stateMachine.dto.FullWorkflowContainerDto", "workflow": [{"persisted": true, "owner": "CYODA", "id": "9e7ffa50-6fd1-11ef-8029-aa2a7e7a6271", "name": "Single Nobel Prize", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:05:56.981-07:00", "description": "", "entityShortClassName": "TreeNodeEntity", "transitionIds": ["adbdf490-6fd1-11ef-8029-aa2a7e7a6271", "ba8ee670-6fd1-11ef-8029-aa2a7e7a6271", "c945fd70-6fd1-11ef-8029-aa2a7e7a6271", "d8d5c130-6fd1-11ef-8029-aa2a7e7a6271"], "criteriaIds": ["f1b0a0e0-6fd0-11ef-8029-aa2a7e7a6271"], "stateIds": ["noneState"], "active": true, "useDecisionTree": false, "decisionTrees": [], "metaData": {"documentLink": ""}}, {"persisted": true, "owner": "CYODA", "id": "a20f3100-6fd0-11ef-8029-aa2a7e7a6271", "name": "Nobel Prizes Collection", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T16:58:53.456-07:00", "description": "A nobel prize dataset", "entityShortClassName": "TreeNodeEntity", "transitionIds": ["0c120410-6fd1-11ef-8029-aa2a7e7a6271", "624e95a0-6fd1-11ef-8029-aa2a7e7a6271", "7bfe3500-6fd1-11ef-8029-aa2a7e7a6271", "eb3769a0-6fd1-11ef-8029-aa2a7e7a6271"], "criteriaIds": ["cd1a2c60-6fd0-11ef-8029-aa2a7e7a6271"], "stateIds": ["noneState"], "active": true, "useDecisionTree": false, "decisionTrees": [], "metaData": {"documentLink": ""}}, {"persisted": true, "owner": "SYSTEM", "id": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "name": "with-async-indexing", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T08:06:26.000-07:00", "description": "", "entityShortClassName": "TableEntity", "transitionIds": ["923d850a-ec1f-11ed-96ca-901b0ebd9b67", "923dac10-ec1f-11ed-96ca-901b0ebd9b67", "923dac1a-ec1f-11ed-96ca-901b0ebd9b67", "923dac24-ec1f-11ed-96ca-901b0ebd9b67", "923dac2e-ec1f-11ed-96ca-901b0ebd9b67", "923dac38-ec1f-11ed-96ca-901b0ebd9b67", "29f60760-ecec-11ed-8587-fec371fa3eb6", "57efd150-edc8-11ed-890d-fec371fa3eb6", "5e361c40-edc8-11ed-890d-fec371fa3eb6"], "criteriaIds": [], "stateIds": ["noneState"], "active": false, "useDecisionTree": false, "decisionTrees": [], "metaData": {"documentLink": ""}}, {"persisted": true, "owner": "PLAY", "id": "25406280-8eff-11e6-8c93-82698f1ff93e", "name": "DEFAULT", "entityClassName": "net.cyoda.saas.model.CSUser", "entityShortClassName": "CSUser", "transitionIds": ["d9f7e240-037c-11e9-879b-acde48001122", "4a21b87b-037d-11e9-879b-acde48001122", "599abfea-037d-11e9-879b-acde48001122", "3a47948a-0399-11e9-9269-acde48001122", "ec6d928a-338d-11e9-bbaa-acde48001122"], "criteriaIds": [], "stateIds": ["noneState"], "active": true, "useDecisionTree": false}, {"persisted": true, "owner": "CYODA", "id": "55297150-e11b-11ee-9c37-16bfd119e9cd", "name": "entity-model-default", "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel", "creationDate": "2024-03-13T02:23:20.421-07:00", "description": "", "entityShortClassName": "EntityModel", "transitionIds": ["880a7f60-e11b-11ee-9c37-16bfd119e9cd", "afefd0c0-e11b-11ee-9c37-16bfd119e9cd", "c09b64c0-e11b-11ee-9c37-16bfd119e9cd", "d25c1240-e11b-11ee-9c37-16bfd119e9cd"], "criteriaIds": [], "stateIds": ["noneState"], "active": true, "useDecisionTree": false, "decisionTrees": [], "metaData": {"documentLink": ""}}, {"persisted": true, "owner": "PLAY", "id": "38a7bb20-8eff-11e6-8c93-82698f1ff93e", "name": "DEFAULT", "entityClassName": "net.cyoda.saas.model.LegalEntity", "entityShortClassName": "LegalEntity", "transitionIds": ["7c10c56a-037d-11e9-879b-acde48001122", "8a04b37a-037d-11e9-879b-acde48001122", "96398c6a-037d-11e9-879b-acde48001122", "695fdaca-0399-11e9-9269-acde48001122", "95b0e99a-338f-11e9-bbaa-acde48001122"], "criteriaIds": [], "stateIds": ["noneState"], "active": true, "useDecisionTree": false}], "transitions": [{"persisted": true, "owner": "CYODA", "id": "880a7f60-e11b-11ee-9c37-16bfd119e9cd", "name": "NEW", "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel", "creationDate": "2024-03-13T02:24:45.782-07:00", "description": "", "startStateId": "noneState", "endStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd", "workflowId": "55297150-e11b-11ee-9c37-16bfd119e9cd", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "d9f7e240-037c-11e9-879b-acde48001122", "name": "NEW", "description": "", "startStateId": "noneState", "endStateId": "da5b10ea-037c-11e9-879b-acde48001122", "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "ba8ee670-6fd1-11ef-8029-aa2a7e7a6271", "name": "Execute", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:06:44.055-07:00", "description": "", "startStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "endStateId": "62557370-6fd1-11ef-8029-aa2a7e7a6271", "workflowId": "9e7ffa50-6fd1-11ef-8029-aa2a7e7a6271", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "57efd150-edc8-11ed-890d-fec371fa3eb6", "name": "UPDATE", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-08T10:47:04.293-07:00", "description": "", "startStateId": "29ff0810-ecec-11ed-8587-fec371fa3eb6", "endStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": [], "endProcessesIds": [{"persisted": true, "persistedId": "39184f50-edc8-11ed-890d-fec371fa3eb6", "runtimeId": 0}], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "624e95a0-6fd1-11ef-8029-aa2a7e7a6271", "name": "Process", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:04:15.994-07:00", "description": "Process the dataset to create each Nobel prize as a separate \"prize\" entity", "startStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "endStateId": "62557370-6fd1-11ef-8029-aa2a7e7a6271", "workflowId": "a20f3100-6fd0-11ef-8029-aa2a7e7a6271", "criteriaIds": [], "endProcessesIds": [{"persisted": true, "persistedId": "3b79ca08-6fd1-11ef-8029-aa2a7e7a6271", "runtimeId": 0}], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "4a21b87b-037d-11e9-879b-acde48001122", "name": "ACTIVATE", "description": "", "startStateId": "da5b10ea-037c-11e9-879b-acde48001122", "endStateId": "4a48c87a-037d-11e9-879b-acde48001122", "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "923dac10-ec1f-11ed-96ca-901b0ebd9b67", "name": "INDEX", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T08:06:26.001-07:00", "description": "", "startStateId": "29ff0810-ecec-11ed-8587-fec371fa3eb6", "endStateId": "b3e30a30-ec16-11ed-96ca-901b0ebd9b67", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": ["0f86d6a0-ecee-11ed-890d-fec371fa3eb6"], "endProcessesIds": [], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "923dac1a-ec1f-11ed-96ca-901b0ebd9b67", "name": "UPDATE", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T08:06:26.001-07:00", "description": "", "startStateId": "b3e30a30-ec16-11ed-96ca-901b0ebd9b67", "endStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": [], "endProcessesIds": [{"persisted": true, "persistedId": "39184f50-edc8-11ed-890d-fec371fa3eb6", "runtimeId": 0}], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "SYSTEM", "id": "923d850a-ec1f-11ed-96ca-901b0ebd9b67", "name": "NEW", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T08:06:26.000-07:00", "startStateId": "noneState", "endStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "SYSTEM", "id": "923dac2e-ec1f-11ed-96ca-901b0ebd9b67", "name": "DELETE", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T08:06:26.001-07:00", "startStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67", "endStateId": "02456a60-ec17-11ed-ae3d-901b0ea4a519", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "adbdf490-6fd1-11ef-8029-aa2a7e7a6271", "name": "NEW", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:06:22.553-07:00", "description": "", "startStateId": "noneState", "endStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "workflowId": "9e7ffa50-6fd1-11ef-8029-aa2a7e7a6271", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "29f60760-ecec-11ed-8587-fec371fa3eb6", "name": "EXECUTE", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-07T08:30:57.878-07:00", "description": "", "startStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67", "endStateId": "29ff0810-ecec-11ed-8587-fec371fa3eb6", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": [], "endProcessesIds": [{"persisted": true, "persistedId": "b1011ff0-ec16-11ed-96ca-901b0ebd9b67", "runtimeId": 0}], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "d25c1240-e11b-11ee-9c37-16bfd119e9cd", "name": "UNLOCK", "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel", "creationDate": "2024-03-13T02:26:50.468-07:00", "description": "", "startStateId": "c0a3c930-e11b-11ee-9c37-16bfd119e9cd", "endStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd", "workflowId": "55297150-e11b-11ee-9c37-16bfd119e9cd", "criteriaIds": ["14a04c0c-dd48-11ee-9c58-92348ad3847c"], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "afefd0c0-e11b-11ee-9c37-16bfd119e9cd", "name": "UPDATE", "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel", "creationDate": "2024-03-13T02:25:52.716-07:00", "description": "", "startStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd", "endStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd", "workflowId": "55297150-e11b-11ee-9c37-16bfd119e9cd", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "SYSTEM", "id": "ec6d928a-338d-11e9-bbaa-acde48001122", "name": "UPDATE", "description": "Update a user", "startStateId": "da5b10ea-037c-11e9-879b-acde48001122", "endStateId": "da5b10ea-037c-11e9-879b-acde48001122", "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "SYSTEM", "id": "95b0e99a-338f-11e9-bbaa-acde48001122", "name": "UPDATE", "description": "", "startStateId": "7c579260-037d-11e9-879b-acde48001122", "endStateId": "7c579260-037d-11e9-879b-acde48001122", "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "8a04b37a-037d-11e9-879b-acde48001122", "name": "ACTIVATE", "description": "", "startStateId": "7c579260-037d-11e9-879b-acde48001122", "endStateId": "8a1de0ca-037d-11e9-879b-acde48001122", "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "SYSTEM", "id": "923dac38-ec1f-11ed-96ca-901b0ebd9b67", "name": "DELETE", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T08:06:26.001-07:00", "startStateId": "b3e30a30-ec16-11ed-96ca-901b0ebd9b67", "endStateId": "02456a60-ec17-11ed-ae3d-901b0ea4a519", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "923dac24-ec1f-11ed-96ca-901b0ebd9b67", "name": "UPDATE", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T08:06:26.001-07:00", "description": "", "startStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67", "endStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": [], "endProcessesIds": [{"persisted": true, "persistedId": "39184f50-edc8-11ed-890d-fec371fa3eb6", "runtimeId": 0}], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "d8d5c130-6fd1-11ef-8029-aa2a7e7a6271", "name": "Update", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:07:34.852-07:00", "description": "", "startStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "endStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "workflowId": "9e7ffa50-6fd1-11ef-8029-aa2a7e7a6271", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "eb3769a0-6fd1-11ef-8029-aa2a7e7a6271", "name": "Update", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:08:05.690-07:00", "description": "", "startStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "endStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "workflowId": "a20f3100-6fd0-11ef-8029-aa2a7e7a6271", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "c09b64c0-e11b-11ee-9c37-16bfd119e9cd", "name": "LOCK", "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel", "creationDate": "2024-03-13T02:26:20.684-07:00", "description": "", "startStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd", "endStateId": "c0a3c930-e11b-11ee-9c37-16bfd119e9cd", "workflowId": "55297150-e11b-11ee-9c37-16bfd119e9cd", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "695fdaca-0399-11e9-9269-acde48001122", "name": "UPDATE", "description": "", "startStateId": "8a1de0ca-037d-11e9-879b-acde48001122", "endStateId": "8a1de0ca-037d-11e9-879b-acde48001122", "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "0c120410-6fd1-11ef-8029-aa2a7e7a6271", "name": "NEW", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:01:51.313-07:00", "description": "", "startStateId": "noneState", "endStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "workflowId": "a20f3100-6fd0-11ef-8029-aa2a7e7a6271", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "599abfea-037d-11e9-879b-acde48001122", "name": "DEACTIVATE", "description": "", "startStateId": "4a48c87a-037d-11e9-879b-acde48001122", "endStateId": "da5b10ea-037c-11e9-879b-acde48001122", "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "5e361c40-edc8-11ed-890d-fec371fa3eb6", "name": "DELETE", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-08T10:47:14.820-07:00", "description": "", "startStateId": "29ff0810-ecec-11ed-8587-fec371fa3eb6", "endStateId": "02456a60-ec17-11ed-ae3d-901b0ea4a519", "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "3a47948a-0399-11e9-9269-acde48001122", "name": "UPDATE", "description": "", "startStateId": "4a48c87a-037d-11e9-879b-acde48001122", "endStateId": "4a48c87a-037d-11e9-879b-acde48001122", "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "c945fd70-6fd1-11ef-8029-aa2a7e7a6271", "name": "Update", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:07:08.743-07:00", "description": "", "startStateId": "62557370-6fd1-11ef-8029-aa2a7e7a6271", "endStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "workflowId": "9e7ffa50-6fd1-11ef-8029-aa2a7e7a6271", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "7c10c56a-037d-11e9-879b-acde48001122", "name": "NEW", "description": "", "startStateId": "noneState", "endStateId": "7c579260-037d-11e9-879b-acde48001122", "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": true, "logActivity": false}, {"persisted": true, "owner": "PLAY", "id": "96398c6a-037d-11e9-879b-acde48001122", "name": "DEACTIVATE", "description": "", "startStateId": "8a1de0ca-037d-11e9-879b-acde48001122", "endStateId": "7c579260-037d-11e9-879b-acde48001122", "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}, {"persisted": true, "owner": "CYODA", "id": "7bfe3500-6fd1-11ef-8029-aa2a7e7a6271", "name": "Update", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:04:59.088-07:00", "description": "", "startStateId": "62557370-6fd1-11ef-8029-aa2a7e7a6271", "endStateId": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "workflowId": "a20f3100-6fd0-11ef-8029-aa2a7e7a6271", "criteriaIds": [], "endProcessesIds": [], "active": true, "automated": false, "logActivity": false}], "criterias": [{"persisted": true, "owner": "CYODA", "id": "cd1a2c60-6fd0-11ef-8029-aa2a7e7a6271", "name": "Is Nobel Prize Collection", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:00:05.670-07:00", "description": "", "condition": {"@bean": "com.cyoda.core.conditions.GroupCondition", "operator": "AND", "conditions": [{"@bean": "com.cyoda.core.conditions.queryable.Equals", "fieldName": "entityModelName", "operation": "EQUALS", "rangeField": "false", "value": {"@type": "String", "value": "prizes"}, "queryable": true}]}, "aliasDefs": [], "parameters": [], "user": "CYODA"}, {"persisted": true, "owner": "CYODA", "id": "f1b0a0e0-6fd0-11ef-8029-aa2a7e7a6271", "name": "Is Nobel Prize", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:01:07.054-07:00", "description": "", "condition": {"@bean": "com.cyoda.core.conditions.GroupCondition", "operator": "AND", "conditions": [{"@bean": "com.cyoda.core.conditions.queryable.Equals", "fieldName": "entityModelName", "operation": "EQUALS", "rangeField": "false", "value": {"@type": "String", "value": "prize"}, "queryable": true}]}, "aliasDefs": [], "parameters": [], "user": "CYODA"}, {"persisted": true, "owner": "PLAY", "id": "0f86d6a0-ecee-11ed-890d-fec371fa3eb6", "name": "IsIndexed", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-07T08:44:32.522-07:00", "description": "", "condition": {"@bean": "com.cyoda.core.conditions.GroupCondition", "operator": "AND", "conditions": [{"@bean": "com.cyoda.core.conditions.queryable.Equals", "fieldName": "indexed", "operation": "EQUALS", "rangeField": "false", "value": true, "queryable": true}]}, "aliasDefs": [], "parameters": [], "user": "PLAY"}, {"persisted": true, "id": "14a04c0c-dd48-11ee-9c58-92348ad3847c", "name": "EntityModel has no data", "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel", "condition": {"@bean": "com.cyoda.core.conditions.ConfigurableUnaryCondition", "invert": false, "unaryCondition": "com.cyoda.tdb.model.metadata.workflow.EntityModelValidatorCondition"}, "aliasDefs": [], "parameters": []}], "processes": [{"persisted": true, "owner": "PLAY", "id": {"@bean": "com.cyoda.core.model.stateMachine.dto.ProcessIdDto", "persisted": true, "persistedId": "b1011ff0-ec16-11ed-96ca-901b0ebd9b67", "runtimeId": 0}, "name": "LauchIndexing", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T07:02:52.143-07:00", "description": "", "processorClassName": "com.cyoda.tdb.model.table.TableEntityIndexProcessor", "parameters": [], "fields": [], "syncProcess": false, "newTransactionForAsync": true, "noneTransactionalForAsync": false, "isTemplate": false, "criteriaIds": [], "user": "PLAY"}, {"persisted": true, "owner": "CYODA", "id": {"@bean": "com.cyoda.core.model.stateMachine.dto.ProcessIdDto", "persisted": true, "persistedId": "3b79ca08-6fd1-11ef-8029-aa2a7e7a6271", "runtimeId": 0}, "name": "Process Nobel Prize Dataset", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:03:10.846-07:00", "description": "", "processorClassName": "net.cyoda.saas.externalize.processor.ExternalizedProcessor", "parameters": [{"persisted": true, "owner": "CYODA", "id": "3b79c9e0-6fd1-11ef-8029-aa2a7e7a6271", "name": "Tags for filtering calculation nodes (separated by ',' or ';')", "creationDate": "2024-09-10T17:03:10.846-07:00", "valueType": "STRING", "value": {"@type": "String", "value": "prizes"}}, {"persisted": true, "owner": "CYODA", "id": "3b79c9ea-6fd1-11ef-8029-aa2a7e7a6271", "name": "Attach entity", "creationDate": "2024-09-10T17:03:10.846-07:00", "valueType": "STRING", "value": {"@type": "String", "value": "TRUE"}}, {"persisted": true, "owner": "CYODA", "id": "3b79c9f4-6fd1-11ef-8029-aa2a7e7a6271", "name": "Calculation response timeout (ms)", "creationDate": "2024-09-10T17:03:10.846-07:00", "valueType": "INTEGER", "value": {"@type": "String", "value": "60000"}}, {"persisted": true, "owner": "CYODA", "id": "3b79c9fe-6fd1-11ef-8029-aa2a7e7a6271", "name": "Retry policy", "creationDate": "2024-09-10T17:03:10.846-07:00", "valueType": "STRING", "value": {"@type": "String", "value": "FIXED"}}], "fields": [], "syncProcess": true, "newTransactionForAsync": false, "noneTransactionalForAsync": false, "isTemplate": false, "criteriaIds": [], "user": "CYODA"}, {"persisted": true, "owner": "PLAY", "id": {"@bean": "com.cyoda.core.model.stateMachine.dto.ProcessIdDto", "persisted": true, "persistedId": "39184f50-edc8-11ed-890d-fec371fa3eb6", "runtimeId": 0}, "name": "ClearIndexes", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-08T10:46:12.549-07:00", "description": "", "processorClassName": "com.cyoda.tdb.model.table.TableEntityIndexProcessor", "parameters": [], "fields": [], "syncProcess": true, "newTransactionForAsync": false, "noneTransactionalForAsync": false, "isTemplate": false, "criteriaIds": [], "user": "PLAY"}], "states": [{"persisted": true, "owner": "CYODA", "id": "62557370-6fd1-11ef-8029-aa2a7e7a6271", "name": "PROCESSED", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:04:16.039-07:00", "description": ""}, {"persisted": true, "owner": "PLAY", "id": "7c579260-037d-11e9-879b-acde48001122", "name": "LOCKED", "entityClassName": "net.cyoda.saas.model.LegalEntity", "description": ""}, {"persisted": true, "owner": "PLAY", "id": "8a1de0ca-037d-11e9-879b-acde48001122", "name": "ACTIVE", "entityClassName": "net.cyoda.saas.model.LegalEntity", "description": ""}, {"persisted": true, "owner": "SYSTEM", "id": "b3e30a30-ec16-11ed-96ca-901b0ebd9b67", "name": "INDEXED", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T07:02:56.979-07:00", "description": ""}, {"persisted": true, "owner": "CYODA", "id": "0c19f350-6fd1-11ef-8029-aa2a7e7a6271", "name": "PENDING", "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity", "creationDate": "2024-09-10T17:01:51.365-07:00", "description": ""}, {"persisted": true, "owner": "PLAY", "id": "da5b10ea-037c-11e9-879b-acde48001122", "name": "LOCKED", "entityClassName": "net.cyoda.saas.model.CSUser", "description": ""}, {"persisted": true, "owner": "PLAY", "id": "29ff0810-ecec-11ed-8587-fec371fa3eb6", "name": "UNINDEXED", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-07T08:30:57.937-07:00", "description": ""}, {"persisted": true, "owner": "SYSTEM", "id": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67", "name": "CREATED", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T07:02:30.602-07:00", "description": ""}, {"persisted": true, "owner": "PLAY", "id": "4a48c87a-037d-11e9-879b-acde48001122", "name": "ACTIVE", "entityClassName": "net.cyoda.saas.model.CSUser", "description": ""}, {"persisted": true, "owner": "SYSTEM", "id": "02456a60-ec17-11ed-ae3d-901b0ea4a519", "name": "DELETED", "entityClassName": "com.cyoda.tdb.model.table.TableEntity", "creationDate": "2023-05-06T07:05:08.486-07:00", "description": ""}, {"persisted": true, "owner": "CYODA", "id": "88104bc0-e11b-11ee-9c37-16bfd119e9cd", "name": "UNLOCKED", "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel", "creationDate": "2024-03-13T02:24:45.820-07:00", "description": ""}, {"persisted": true, "owner": "CYODA", "id": "c0a3c930-e11b-11ee-9c37-16bfd119e9cd", "name": "LOCKED", "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel", "creationDate": "2024-03-13T02:26:20.739-07:00", "description": ""}], "processParams": [{"persisted": true, "owner": "CYODA", "id": "3b79c9e0-6fd1-11ef-8029-aa2a7e7a6271", "name": "Tags for filtering calculation nodes (separated by ',' or ';')", "creationDate": "2024-09-10T17:03:10.846-07:00", "valueType": "STRING", "value": {"@type": "String", "value": "prizes"}}, {"persisted": true, "owner": "CYODA", "id": "3b79c9ea-6fd1-11ef-8029-aa2a7e7a6271", "name": "Attach entity", "creationDate": "2024-09-10T17:03:10.846-07:00", "valueType": "STRING", "value": {"@type": "String", "value": "TRUE"}}, {"persisted": true, "owner": "CYODA", "id": "3b79c9f4-6fd1-11ef-8029-aa2a7e7a6271", "name": "Calculation response timeout (ms)", "creationDate": "2024-09-10T17:03:10.846-07:00", "valueType": "INTEGER", "value": {"@type": "String", "value": "60000"}}, {"persisted": true, "owner": "CYODA", "id": "3b79c9fe-6fd1-11ef-8029-aa2a7e7a6271", "name": "Retry policy", "creationDate": "2024-09-10T17:03:10.846-07:00", "valueType": "STRING", "value": {"@type": "String", "value": "FIXED"}}]}
+{
+  "@bean": "com.cyoda.core.model.stateMachine.dto.FullWorkflowContainerDto",
+  "workflow": [
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "38a7bb20-8eff-11e6-8c93-82698f1ff93e",
+      "name": "DEFAULT",
+      "entityClassName": "net.cyoda.saas.model.LegalEntity",
+      "entityShortClassName": "LegalEntity",
+      "transitionIds": [
+        "7c10c56a-037d-11e9-879b-acde48001122",
+        "8a04b37a-037d-11e9-879b-acde48001122",
+        "96398c6a-037d-11e9-879b-acde48001122",
+        "695fdaca-0399-11e9-9269-acde48001122",
+        "95b0e99a-338f-11e9-bbaa-acde48001122"
+      ],
+      "criteriaIds": [],
+      "stateIds": [
+        "noneState"
+      ],
+      "active": false,
+      "useDecisionTree": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "25406280-8eff-11e6-8c93-82698f1ff93e",
+      "name": "DEFAULT",
+      "entityClassName": "net.cyoda.saas.model.CSUser",
+      "entityShortClassName": "CSUser",
+      "transitionIds": [
+        "d9f7e240-037c-11e9-879b-acde48001122",
+        "4a21b87b-037d-11e9-879b-acde48001122",
+        "599abfea-037d-11e9-879b-acde48001122",
+        "3a47948a-0399-11e9-9269-acde48001122",
+        "ec6d928a-338d-11e9-bbaa-acde48001122"
+      ],
+      "criteriaIds": [],
+      "stateIds": [
+        "noneState"
+      ],
+      "active": false,
+      "useDecisionTree": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "55297150-e11b-11ee-9c37-16bfd119e9cd",
+      "name": "entity-model-default",
+      "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel",
+      "creationDate": "2024-03-13T10:23:20.421+01:00",
+      "description": "",
+      "entityShortClassName": "EntityModel",
+      "transitionIds": [
+        "880a7f60-e11b-11ee-9c37-16bfd119e9cd",
+        "afefd0c0-e11b-11ee-9c37-16bfd119e9cd",
+        "c09b64c0-e11b-11ee-9c37-16bfd119e9cd",
+        "d25c1240-e11b-11ee-9c37-16bfd119e9cd"
+      ],
+      "criteriaIds": [],
+      "stateIds": [
+        "noneState"
+      ],
+      "active": true,
+      "useDecisionTree": false,
+      "decisionTrees": [],
+      "metaData": {
+        "documentLink": ""
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "7f928b80-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "name": "Without Indexing",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2024-02-06T02:10:20.984+01:00",
+      "description": "",
+      "entityShortClassName": "TableEntity",
+      "transitionIds": [
+        "8934d2b0-c48c-11ee-b0f1-b6f53fd6f4fa",
+        "90a60910-c48c-11ee-b0f1-b6f53fd6f4fa",
+        "a8312550-c48d-11ee-b0f1-b6f53fd6f4fa",
+        "b3c2e070-c48d-11ee-b0f1-b6f53fd6f4fa"
+      ],
+      "criteriaIds": [],
+      "stateIds": [
+        "noneState"
+      ],
+      "active": true,
+      "useDecisionTree": false,
+      "decisionTrees": [],
+      "metaData": {
+        "documentLink": ""
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "Nobel Prize Data",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:25:14.431+01:00",
+      "description": "",
+      "entityShortClassName": "EdgeMessage",
+      "transitionIds": [
+        "751dd9f0-c45c-11ee-bfb1-4a53fe76ab6e",
+        "7efae030-c45c-11ee-bfb1-4a53fe76ab6e",
+        "86b49140-c45c-11ee-bfb1-4a53fe76ab6e",
+        "912488b0-c45c-11ee-bfb1-4a53fe76ab6e",
+        "9b8f5000-c45c-11ee-bfb1-4a53fe76ab6e",
+        "a2bf5eb0-c45c-11ee-bfb1-4a53fe76ab6e",
+        "acb20fd0-c45c-11ee-bfb1-4a53fe76ab6e",
+        "b5e76460-c45c-11ee-bfb1-4a53fe76ab6e",
+        "73203fc0-c45d-11ee-bfb1-4a53fe76ab6e"
+      ],
+      "criteriaIds": [
+        "819aa7a0-c478-11ee-a7c4-b6f53fd6f4fa"
+      ],
+      "stateIds": [
+        "noneState"
+      ],
+      "active": true,
+      "useDecisionTree": false,
+      "decisionTrees": [],
+      "metaData": {
+        "documentLink": ""
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "e1938f40-b8cb-11ee-87eb-72add249621b",
+      "name": "DEFAULT",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntityContainer",
+      "creationDate": "2024-01-22T03:13:49.748+01:00",
+      "description": "",
+      "entityShortClassName": "TableEntityContainer",
+      "transitionIds": [
+        "e194c7c0-b8cb-11ee-87eb-72add249621b",
+        "e199f7e0-b8cb-11ee-87eb-72add249621b",
+        "e19c1ac0-b8cb-11ee-87eb-72add249621b",
+        "e19d2c30-b8cb-11ee-87eb-72add249621b"
+      ],
+      "criteriaIds": [],
+      "stateIds": [
+        "noneState"
+      ],
+      "active": true,
+      "useDecisionTree": false,
+      "decisionTrees": [],
+      "metaData": {}
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "2667c1f0-b8cb-11ee-87eb-72add249621b",
+      "name": "Nobel Prize Data",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-01-22T03:08:35.727+01:00",
+      "description": "",
+      "entityShortClassName": "TreeNodeEntity",
+      "transitionIds": [
+        "26694890-b8cb-11ee-87eb-72add249621b",
+        "266be0a0-b8cb-11ee-87eb-72add249621b",
+        "266db560-b8cb-11ee-87eb-72add249621b",
+        "c91517d0-bea8-11ee-a51b-c28a600b503e",
+        "db2d5b30-bea8-11ee-a51b-c28a600b503e"
+      ],
+      "criteriaIds": [
+        "39e444f0-917f-11ef-85b6-8ef66e23e16d"
+      ],
+      "stateIds": [
+        "noneState"
+      ],
+      "active": true,
+      "useDecisionTree": false,
+      "decisionTrees": [],
+      "metaData": {}
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "name": "with-async-indexing",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T17:06:26.000+02:00",
+      "description": "",
+      "entityShortClassName": "TableEntity",
+      "transitionIds": [
+        "923d850a-ec1f-11ed-96ca-901b0ebd9b67",
+        "923dac10-ec1f-11ed-96ca-901b0ebd9b67",
+        "923dac1a-ec1f-11ed-96ca-901b0ebd9b67",
+        "923dac24-ec1f-11ed-96ca-901b0ebd9b67",
+        "923dac2e-ec1f-11ed-96ca-901b0ebd9b67",
+        "923dac38-ec1f-11ed-96ca-901b0ebd9b67",
+        "29f60760-ecec-11ed-8587-fec371fa3eb6",
+        "57efd150-edc8-11ed-890d-fec371fa3eb6",
+        "5e361c40-edc8-11ed-890d-fec371fa3eb6"
+      ],
+      "criteriaIds": [],
+      "stateIds": [
+        "noneState"
+      ],
+      "active": false,
+      "useDecisionTree": false,
+      "decisionTrees": [],
+      "metaData": {
+        "documentLink": ""
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "86b49140-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "UPDATE",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:26:57.108+01:00",
+      "description": "",
+      "startStateId": "7f025a40-c45c-11ee-bfb1-4a53fe76ab6e",
+      "endStateId": "752246c0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "912488b0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "REPLACE",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:27:14.619+01:00",
+      "description": "",
+      "startStateId": "7f025a40-c45c-11ee-bfb1-4a53fe76ab6e",
+      "endStateId": "912b3f70-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "880a7f60-e11b-11ee-9c37-16bfd119e9cd",
+      "name": "NEW",
+      "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel",
+      "creationDate": "2024-03-13T10:24:45.782+01:00",
+      "description": "",
+      "startStateId": "noneState",
+      "endStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd",
+      "workflowId": "55297150-e11b-11ee-9c37-16bfd119e9cd",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "8934d2b0-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "name": "NEW",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2024-02-06T02:10:37.147+01:00",
+      "description": "",
+      "startStateId": "noneState",
+      "endStateId": "8938f160-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "workflowId": "7f928b80-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "d9f7e240-037c-11e9-879b-acde48001122",
+      "name": "NEW",
+      "description": "",
+      "startStateId": "noneState",
+      "endStateId": "da5b10ea-037c-11e9-879b-acde48001122",
+      "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "90a60910-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "name": "DELETE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2024-02-06T02:10:49.633+01:00",
+      "description": "",
+      "startStateId": "8938f160-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "endStateId": "90a98b80-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "workflowId": "7f928b80-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "a2bf5eb0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "DELETE",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:27:44.155+01:00",
+      "description": "",
+      "startStateId": "7f025a40-c45c-11ee-bfb1-4a53fe76ab6e",
+      "endStateId": "9b962dd0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "7efae030-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "PROCESS",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:26:44.147+01:00",
+      "description": "",
+      "startStateId": "752246c0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "endStateId": "7f025a40-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [
+        {
+          "persisted": true,
+          "persistedId": "d922ce2e-f472-11ee-bc2e-c203fde17743",
+          "runtimeId": 0
+        }
+      ],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "57efd150-edc8-11ed-890d-fec371fa3eb6",
+      "name": "UPDATE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-08T19:47:04.293+02:00",
+      "description": "",
+      "startStateId": "29ff0810-ecec-11ed-8587-fec371fa3eb6",
+      "endStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [],
+      "endProcessesIds": [
+        {
+          "persisted": true,
+          "persistedId": "39184f50-edc8-11ed-890d-fec371fa3eb6",
+          "runtimeId": 0
+        }
+      ],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "4a21b87b-037d-11e9-879b-acde48001122",
+      "name": "ACTIVATE",
+      "description": "",
+      "startStateId": "da5b10ea-037c-11e9-879b-acde48001122",
+      "endStateId": "4a48c87a-037d-11e9-879b-acde48001122",
+      "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "73203fc0-c45d-11ee-bfb1-4a53fe76ab6e",
+      "name": "UNDO",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:33:33.756+01:00",
+      "description": "",
+      "startStateId": "9b962dd0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "endStateId": "752246c0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "923dac10-ec1f-11ed-96ca-901b0ebd9b67",
+      "name": "INDEX",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T17:06:26.001+02:00",
+      "description": "",
+      "startStateId": "29ff0810-ecec-11ed-8587-fec371fa3eb6",
+      "endStateId": "b3e30a30-ec16-11ed-96ca-901b0ebd9b67",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [
+        "0f86d6a0-ecee-11ed-890d-fec371fa3eb6"
+      ],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "923dac1a-ec1f-11ed-96ca-901b0ebd9b67",
+      "name": "UPDATE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T17:06:26.001+02:00",
+      "description": "",
+      "startStateId": "b3e30a30-ec16-11ed-96ca-901b0ebd9b67",
+      "endStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [],
+      "endProcessesIds": [
+        {
+          "persisted": true,
+          "persistedId": "39184f50-edc8-11ed-890d-fec371fa3eb6",
+          "runtimeId": 0
+        }
+      ],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "923d850a-ec1f-11ed-96ca-901b0ebd9b67",
+      "name": "NEW",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T17:06:26.000+02:00",
+      "startStateId": "noneState",
+      "endStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "266be0a0-b8cb-11ee-87eb-72add249621b",
+      "name": "UPDATE",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-01-22T03:08:35.754+01:00",
+      "description": "",
+      "startStateId": "5a729b30-bc06-11ee-bc69-16c16681735a",
+      "endStateId": "b97611d0-bea8-11ee-a51b-c28a600b503e",
+      "workflowId": "2667c1f0-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "923dac2e-ec1f-11ed-96ca-901b0ebd9b67",
+      "name": "DELETE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T17:06:26.001+02:00",
+      "startStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67",
+      "endStateId": "02456a60-ec17-11ed-ae3d-901b0ea4a519",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "29f60760-ecec-11ed-8587-fec371fa3eb6",
+      "name": "EXECUTE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-07T17:30:57.878+02:00",
+      "description": "",
+      "startStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67",
+      "endStateId": "29ff0810-ecec-11ed-8587-fec371fa3eb6",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [],
+      "endProcessesIds": [
+        {
+          "persisted": true,
+          "persistedId": "b1011ff0-ec16-11ed-96ca-901b0ebd9b67",
+          "runtimeId": 0
+        }
+      ],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "d25c1240-e11b-11ee-9c37-16bfd119e9cd",
+      "name": "UNLOCK",
+      "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel",
+      "creationDate": "2024-03-13T10:26:50.468+01:00",
+      "description": "",
+      "startStateId": "c0a3c930-e11b-11ee-9c37-16bfd119e9cd",
+      "endStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd",
+      "workflowId": "55297150-e11b-11ee-9c37-16bfd119e9cd",
+      "criteriaIds": [
+        "14a04c0c-dd48-11ee-9c58-92348ad3847c"
+      ],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "c91517d0-bea8-11ee-a51b-c28a600b503e",
+      "name": "MAP",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-01-29T14:17:43.245+01:00",
+      "description": "",
+      "startStateId": "b97611d0-bea8-11ee-a51b-c28a600b503e",
+      "endStateId": "5a729b30-bc06-11ee-bc69-16c16681735a",
+      "workflowId": "2667c1f0-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [
+        {
+          "persisted": true,
+          "persistedId": "6a755338-9180-11ef-85b6-8ef66e23e16d",
+          "runtimeId": 0
+        }
+      ],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "afefd0c0-e11b-11ee-9c37-16bfd119e9cd",
+      "name": "UPDATE",
+      "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel",
+      "creationDate": "2024-03-13T10:25:52.716+01:00",
+      "description": "",
+      "startStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd",
+      "endStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd",
+      "workflowId": "55297150-e11b-11ee-9c37-16bfd119e9cd",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "ec6d928a-338d-11e9-bbaa-acde48001122",
+      "name": "UPDATE",
+      "description": "Update a user",
+      "startStateId": "da5b10ea-037c-11e9-879b-acde48001122",
+      "endStateId": "da5b10ea-037c-11e9-879b-acde48001122",
+      "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "751dd9f0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "NEW",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:26:27.600+01:00",
+      "description": "",
+      "startStateId": "noneState",
+      "endStateId": "752246c0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "b5e76460-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "UNDO",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:28:16.294+01:00",
+      "description": "",
+      "startStateId": "912b3f70-c45c-11ee-bfb1-4a53fe76ab6e",
+      "endStateId": "752246c0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "95b0e99a-338f-11e9-bbaa-acde48001122",
+      "name": "UPDATE",
+      "description": "",
+      "startStateId": "7c579260-037d-11e9-879b-acde48001122",
+      "endStateId": "7c579260-037d-11e9-879b-acde48001122",
+      "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "9b8f5000-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "DELETE",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:27:32.096+01:00",
+      "description": "",
+      "startStateId": "752246c0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "endStateId": "9b962dd0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "8a04b37a-037d-11e9-879b-acde48001122",
+      "name": "ACTIVATE",
+      "description": "",
+      "startStateId": "7c579260-037d-11e9-879b-acde48001122",
+      "endStateId": "8a1de0ca-037d-11e9-879b-acde48001122",
+      "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "923dac38-ec1f-11ed-96ca-901b0ebd9b67",
+      "name": "DELETE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T17:06:26.001+02:00",
+      "startStateId": "b3e30a30-ec16-11ed-96ca-901b0ebd9b67",
+      "endStateId": "02456a60-ec17-11ed-ae3d-901b0ea4a519",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "e199f7e0-b8cb-11ee-87eb-72add249621b",
+      "name": "INDEX",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntityContainer",
+      "creationDate": "2024-01-22T03:13:49.790+01:00",
+      "description": "",
+      "startStateId": "PENDING",
+      "endStateId": "INDEXED",
+      "workflowId": "e1938f40-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [
+        {
+          "persisted": true,
+          "persistedId": "f63a6cc0-b8cb-11ee-87eb-72add249621b",
+          "runtimeId": 0
+        }
+      ],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "266db560-b8cb-11ee-87eb-72add249621b",
+      "name": "DELETE",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-01-22T03:08:35.766+01:00",
+      "description": "",
+      "startStateId": "5a729b30-bc06-11ee-bc69-16c16681735a",
+      "endStateId": "DELETED",
+      "workflowId": "2667c1f0-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "acb20fd0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "DELETE",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:28:00.845+01:00",
+      "description": "",
+      "startStateId": "912b3f70-c45c-11ee-bfb1-4a53fe76ab6e",
+      "endStateId": "9b962dd0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "workflowId": "49814cf0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "a8312550-c48d-11ee-b0f1-b6f53fd6f4fa",
+      "name": "UPDATE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2024-02-06T02:18:38.629+01:00",
+      "description": "",
+      "startStateId": "8938f160-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "endStateId": "8938f160-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "workflowId": "7f928b80-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "923dac24-ec1f-11ed-96ca-901b0ebd9b67",
+      "name": "UPDATE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T17:06:26.001+02:00",
+      "description": "",
+      "startStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67",
+      "endStateId": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [],
+      "endProcessesIds": [
+        {
+          "persisted": true,
+          "persistedId": "39184f50-edc8-11ed-890d-fec371fa3eb6",
+          "runtimeId": 0
+        }
+      ],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "695fdaca-0399-11e9-9269-acde48001122",
+      "name": "UPDATE",
+      "description": "",
+      "startStateId": "8a1de0ca-037d-11e9-879b-acde48001122",
+      "endStateId": "8a1de0ca-037d-11e9-879b-acde48001122",
+      "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "c09b64c0-e11b-11ee-9c37-16bfd119e9cd",
+      "name": "LOCK",
+      "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel",
+      "creationDate": "2024-03-13T10:26:20.684+01:00",
+      "description": "",
+      "startStateId": "88104bc0-e11b-11ee-9c37-16bfd119e9cd",
+      "endStateId": "c0a3c930-e11b-11ee-9c37-16bfd119e9cd",
+      "workflowId": "55297150-e11b-11ee-9c37-16bfd119e9cd",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "26694890-b8cb-11ee-87eb-72add249621b",
+      "name": "NEW",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-01-22T03:08:35.737+01:00",
+      "description": "",
+      "startStateId": "noneState",
+      "endStateId": "b97611d0-bea8-11ee-a51b-c28a600b503e",
+      "workflowId": "2667c1f0-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "e19c1ac0-b8cb-11ee-87eb-72add249621b",
+      "name": "UPDATE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntityContainer",
+      "creationDate": "2024-01-22T03:13:49.804+01:00",
+      "startStateId": "INDEXED",
+      "endStateId": "PENDING",
+      "workflowId": "e1938f40-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "db2d5b30-bea8-11ee-a51b-c28a600b503e",
+      "name": "DELETE",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-01-29T14:18:13.603+01:00",
+      "description": "",
+      "startStateId": "b97611d0-bea8-11ee-a51b-c28a600b503e",
+      "endStateId": "DELETED",
+      "workflowId": "2667c1f0-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "599abfea-037d-11e9-879b-acde48001122",
+      "name": "DEACTIVATE",
+      "description": "",
+      "startStateId": "4a48c87a-037d-11e9-879b-acde48001122",
+      "endStateId": "da5b10ea-037c-11e9-879b-acde48001122",
+      "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "5e361c40-edc8-11ed-890d-fec371fa3eb6",
+      "name": "DELETE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-08T19:47:14.820+02:00",
+      "description": "",
+      "startStateId": "29ff0810-ecec-11ed-8587-fec371fa3eb6",
+      "endStateId": "02456a60-ec17-11ed-ae3d-901b0ea4a519",
+      "workflowId": "923d8500-ec1f-11ed-96ca-901b0ebd9b67",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "3a47948a-0399-11e9-9269-acde48001122",
+      "name": "UPDATE",
+      "description": "",
+      "startStateId": "4a48c87a-037d-11e9-879b-acde48001122",
+      "endStateId": "4a48c87a-037d-11e9-879b-acde48001122",
+      "workflowId": "25406280-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "7c10c56a-037d-11e9-879b-acde48001122",
+      "name": "NEW",
+      "description": "",
+      "startStateId": "noneState",
+      "endStateId": "7c579260-037d-11e9-879b-acde48001122",
+      "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "96398c6a-037d-11e9-879b-acde48001122",
+      "name": "DEACTIVATE",
+      "description": "",
+      "startStateId": "8a1de0ca-037d-11e9-879b-acde48001122",
+      "endStateId": "7c579260-037d-11e9-879b-acde48001122",
+      "workflowId": "38a7bb20-8eff-11e6-8c93-82698f1ff93e",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "e194c7c0-b8cb-11ee-87eb-72add249621b",
+      "name": "NEW",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntityContainer",
+      "creationDate": "2024-01-22T03:13:49.756+01:00",
+      "startStateId": "noneState",
+      "endStateId": "PENDING",
+      "workflowId": "e1938f40-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": true,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "e19d2c30-b8cb-11ee-87eb-72add249621b",
+      "name": "DELETE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntityContainer",
+      "creationDate": "2024-01-22T03:13:49.811+01:00",
+      "startStateId": "INDEXED",
+      "endStateId": "DELETED",
+      "workflowId": "e1938f40-b8cb-11ee-87eb-72add249621b",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "b3c2e070-c48d-11ee-b0f1-b6f53fd6f4fa",
+      "name": "UPDATE",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2024-02-06T02:18:58.039+01:00",
+      "description": "",
+      "startStateId": "90a98b80-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "endStateId": "8938f160-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "workflowId": "7f928b80-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "criteriaIds": [],
+      "endProcessesIds": [],
+      "active": true,
+      "automated": false,
+      "logActivity": false
+    }
+  ],
+  "criterias": [
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "819aa7a0-c478-11ee-a7c4-b6f53fd6f4fa",
+      "name": "IsNobelPrizeData",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T23:47:14.458+01:00",
+      "description": "",
+      "condition": {
+        "@bean": "com.cyoda.core.conditions.GroupCondition",
+        "operator": "AND",
+        "conditions": [
+          {
+            "@bean": "com.cyoda.core.conditions.queryable.Equals",
+            "fieldName": "header@net#cyoda#saas#message#model#EdgeMessageHeader.subject",
+            "operation": "EQUALS",
+            "rangeField": "false",
+            "value": {
+              "@type": "String",
+              "value": "NobelPrizes"
+            },
+            "queryable": true
+          }
+        ]
+      },
+      "aliasDefs": [],
+      "parameters": [],
+      "user": "CYODA"
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "0f86d6a0-ecee-11ed-890d-fec371fa3eb6",
+      "name": "IsIndexed",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-07T17:44:32.522+02:00",
+      "description": "",
+      "condition": {
+        "@bean": "com.cyoda.core.conditions.GroupCondition",
+        "operator": "AND",
+        "conditions": [
+          {
+            "@bean": "com.cyoda.core.conditions.queryable.Equals",
+            "fieldName": "indexed",
+            "operation": "EQUALS",
+            "rangeField": "false",
+            "value": true,
+            "queryable": true
+          }
+        ]
+      },
+      "aliasDefs": [],
+      "parameters": [],
+      "user": "PLAY"
+    },
+    {
+      "persisted": true,
+      "id": "14a04c0c-dd48-11ee-9c58-92348ad3847c",
+      "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel",
+      "condition": {
+        "@bean": "com.cyoda.core.conditions.ConfigurableUnaryCondition",
+        "invert": false,
+        "unaryCondition": "com.cyoda.tdb.model.metadata.workflow.EntityModelValidatorCondition"
+      },
+      "aliasDefs": [],
+      "parameters": []
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "39e444f0-917f-11ef-85b6-8ef66e23e16d",
+      "name": "isNobelPrizeData",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-10-23T22:41:48.991+02:00",
+      "description": "",
+      "condition": {
+        "@bean": "com.cyoda.core.conditions.GroupCondition",
+        "operator": "AND",
+        "conditions": [
+          {
+            "@bean": "com.cyoda.core.conditions.queryable.Equals",
+            "fieldName": "entityModelName",
+            "operation": "EQUALS",
+            "rangeField": "false",
+            "value": {
+              "@type": "String",
+              "value": "prizes"
+            },
+            "queryable": true
+          }
+        ]
+      },
+      "aliasDefs": [],
+      "parameters": [],
+      "user": "CYODA"
+    }
+  ],
+  "processes": [
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": {
+        "@bean": "com.cyoda.core.model.stateMachine.dto.ProcessIdDto",
+        "persisted": true,
+        "persistedId": "b1011ff0-ec16-11ed-96ca-901b0ebd9b67",
+        "runtimeId": 0
+      },
+      "name": "LauchIndexing",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T16:02:52.143+02:00",
+      "description": "",
+      "processorClassName": "com.cyoda.tdb.model.table.TableEntityIndexProcessor",
+      "parameters": [],
+      "fields": [],
+      "syncProcess": false,
+      "newTransactionForAsync": true,
+      "noneTransactionalForAsync": false,
+      "isTemplate": false,
+      "criteriaIds": [],
+      "user": "PLAY"
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": {
+        "@bean": "com.cyoda.core.model.stateMachine.dto.ProcessIdDto",
+        "persisted": true,
+        "persistedId": "f63a6cc0-b8cb-11ee-87eb-72add249621b",
+        "runtimeId": 0
+      },
+      "name": "CreateOrUpdateTableEntities",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntityContainer",
+      "creationDate": "2024-01-22T03:14:24.396+01:00",
+      "description": "",
+      "processorClassName": "net.cyoda.saas.workflow.processors.CreateOrUpdateTableEntities",
+      "parameters": [],
+      "fields": [],
+      "syncProcess": true,
+      "newTransactionForAsync": true,
+      "noneTransactionalForAsync": false,
+      "isTemplate": false,
+      "criteriaIds": [],
+      "user": "CYODA"
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": {
+        "@bean": "com.cyoda.core.model.stateMachine.dto.ProcessIdDto",
+        "persisted": true,
+        "persistedId": "6a755338-9180-11ef-85b6-8ef66e23e16d",
+        "runtimeId": 0
+      },
+      "name": "Process Nobel Prize Dataset",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-10-23T22:50:19.969+02:00",
+      "description": "",
+      "processorClassName": "net.cyoda.saas.externalize.processor.ExternalizedProcessor",
+      "parameters": [
+        {
+          "persisted": true,
+          "owner": "CYODA",
+          "id": "6a755310-9180-11ef-85b6-8ef66e23e16d",
+          "name": "Tags for filtering calculation nodes (separated by ',' or ';')",
+          "creationDate": "2024-10-23T22:50:19.969+02:00",
+          "valueType": "STRING",
+          "value": {
+            "@type": "String",
+            "value": "prizes"
+          }
+        },
+        {
+          "persisted": true,
+          "owner": "CYODA",
+          "id": "6a75531a-9180-11ef-85b6-8ef66e23e16d",
+          "name": "Attach entity",
+          "creationDate": "2024-10-23T22:50:19.969+02:00",
+          "valueType": "STRING",
+          "value": {
+            "@type": "String",
+            "value": "TRUE"
+          }
+        },
+        {
+          "persisted": true,
+          "owner": "CYODA",
+          "id": "6a755324-9180-11ef-85b6-8ef66e23e16d",
+          "name": "Calculation response timeout (ms)",
+          "creationDate": "2024-10-23T22:50:19.969+02:00",
+          "valueType": "INTEGER",
+          "value": {
+            "@type": "String",
+            "value": "10000"
+          }
+        },
+        {
+          "persisted": true,
+          "owner": "CYODA",
+          "id": "6a75532e-9180-11ef-85b6-8ef66e23e16d",
+          "name": "Retry policy",
+          "creationDate": "2024-10-23T22:50:19.969+02:00",
+          "valueType": "STRING",
+          "value": {
+            "@type": "String",
+            "value": "NONE"
+          }
+        }
+      ],
+      "fields": [],
+      "syncProcess": false,
+      "newTransactionForAsync": false,
+      "noneTransactionalForAsync": false,
+      "isTemplate": false,
+      "criteriaIds": [],
+      "user": "CYODA"
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": {
+        "@bean": "com.cyoda.core.model.stateMachine.dto.ProcessIdDto",
+        "persisted": true,
+        "persistedId": "d922ce2e-f472-11ee-bc2e-c203fde17743",
+        "runtimeId": 0
+      },
+      "name": "Parse Prize Message",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-04-07T02:07:40.145+02:00",
+      "description": "",
+      "processorClassName": "net.cyoda.saas.externalize.processor.ExternalizedProcessor",
+      "parameters": [
+        {
+          "persisted": true,
+          "owner": "CYODA",
+          "id": "d922ce10-f472-11ee-bc2e-c203fde17743",
+          "name": "Tags for filtering calculation nodes (separated by ',' or ';')",
+          "creationDate": "2024-04-07T02:07:40.145+02:00",
+          "valueType": "STRING",
+          "value": {
+            "@type": "String",
+            "value": "prizes"
+          }
+        },
+        {
+          "persisted": true,
+          "owner": "CYODA",
+          "id": "d922ce1a-f472-11ee-bc2e-c203fde17743",
+          "name": "Attach entity",
+          "creationDate": "2024-04-07T02:07:40.145+02:00",
+          "valueType": "STRING",
+          "value": {
+            "@type": "String",
+            "value": "true"
+          }
+        },
+        {
+          "persisted": true,
+          "owner": "CYODA",
+          "id": "d922ce24-f472-11ee-bc2e-c203fde17743",
+          "name": "Calculation response timeout (ms)",
+          "creationDate": "2024-04-07T02:07:40.145+02:00",
+          "valueType": "INTEGER",
+          "value": {
+            "@type": "String",
+            "value": "10000"
+          }
+        }
+      ],
+      "fields": [],
+      "syncProcess": true,
+      "newTransactionForAsync": false,
+      "noneTransactionalForAsync": false,
+      "isTemplate": false,
+      "criteriaIds": [],
+      "user": "CYODA"
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": {
+        "@bean": "com.cyoda.core.model.stateMachine.dto.ProcessIdDto",
+        "persisted": true,
+        "persistedId": "39184f50-edc8-11ed-890d-fec371fa3eb6",
+        "runtimeId": 0
+      },
+      "name": "ClearIndexes",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-08T19:46:12.549+02:00",
+      "description": "",
+      "processorClassName": "com.cyoda.tdb.model.table.TableEntityIndexProcessor",
+      "parameters": [],
+      "fields": [],
+      "syncProcess": true,
+      "newTransactionForAsync": false,
+      "noneTransactionalForAsync": false,
+      "isTemplate": false,
+      "criteriaIds": [],
+      "user": "PLAY"
+    }
+  ],
+  "states": [
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "7c579260-037d-11e9-879b-acde48001122",
+      "name": "LOCKED",
+      "entityClassName": "net.cyoda.saas.model.LegalEntity",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "90a98b80-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "name": "DELETED",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2024-02-06T02:10:49.656+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "8a1de0ca-037d-11e9-879b-acde48001122",
+      "name": "ACTIVE",
+      "entityClassName": "net.cyoda.saas.model.LegalEntity",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "912b3f70-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "REPLACED",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:27:14.663+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "PENDING",
+      "name": "PENDING",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntityContainer",
+      "description": "PENDING"
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "DELETED",
+      "name": "DELETED",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "description": "DELETED"
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "b3e30a30-ec16-11ed-96ca-901b0ebd9b67",
+      "name": "INDEXED",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T16:02:56.979+02:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "5a729b30-bc06-11ee-bc69-16c16681735a",
+      "name": "MAPPED",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-01-26T05:49:56.835+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "INDEXED",
+      "name": "INDEXED",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntityContainer",
+      "description": "INDEXED"
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "7f025a40-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "PROCESSED",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:26:44.196+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "752246c0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "PENDING",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:26:27.628+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "da5b10ea-037c-11e9-879b-acde48001122",
+      "name": "LOCKED",
+      "entityClassName": "net.cyoda.saas.model.CSUser",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "29ff0810-ecec-11ed-8587-fec371fa3eb6",
+      "name": "UNINDEXED",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-07T17:30:57.937+02:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "a42a3aa0-ec16-11ed-96ca-901b0ebd9b67",
+      "name": "CREATED",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T16:02:30.602+02:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "b97611d0-bea8-11ee-a51b-c28a600b503e",
+      "name": "PENDING",
+      "entityClassName": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "creationDate": "2024-01-29T14:17:17.037+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "PLAY",
+      "id": "4a48c87a-037d-11e9-879b-acde48001122",
+      "name": "ACTIVE",
+      "entityClassName": "net.cyoda.saas.model.CSUser",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "SYSTEM",
+      "id": "02456a60-ec17-11ed-ae3d-901b0ea4a519",
+      "name": "DELETED",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2023-05-06T16:05:08.486+02:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "9b962dd0-c45c-11ee-bfb1-4a53fe76ab6e",
+      "name": "DELETED",
+      "entityClassName": "net.cyoda.saas.message.model.EdgeMessage",
+      "creationDate": "2024-02-05T20:27:32.141+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "8938f160-c48c-11ee-b0f1-b6f53fd6f4fa",
+      "name": "CREATED",
+      "entityClassName": "com.cyoda.tdb.model.table.TableEntity",
+      "creationDate": "2024-02-06T02:10:37.174+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "88104bc0-e11b-11ee-9c37-16bfd119e9cd",
+      "name": "UNLOCKED",
+      "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel",
+      "creationDate": "2024-03-13T10:24:45.820+01:00",
+      "description": ""
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "c0a3c930-e11b-11ee-9c37-16bfd119e9cd",
+      "name": "LOCKED",
+      "entityClassName": "com.cyoda.tdb.model.metadata.EntityModel",
+      "creationDate": "2024-03-13T10:26:20.739+01:00",
+      "description": ""
+    }
+  ],
+  "processParams": [
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "6a755310-9180-11ef-85b6-8ef66e23e16d",
+      "name": "Tags for filtering calculation nodes (separated by ',' or ';')",
+      "creationDate": "2024-10-23T22:50:19.969+02:00",
+      "valueType": "STRING",
+      "value": {
+        "@type": "String",
+        "value": "prizes"
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "6a75531a-9180-11ef-85b6-8ef66e23e16d",
+      "name": "Attach entity",
+      "creationDate": "2024-10-23T22:50:19.969+02:00",
+      "valueType": "STRING",
+      "value": {
+        "@type": "String",
+        "value": "TRUE"
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "6a755324-9180-11ef-85b6-8ef66e23e16d",
+      "name": "Calculation response timeout (ms)",
+      "creationDate": "2024-10-23T22:50:19.969+02:00",
+      "valueType": "INTEGER",
+      "value": {
+        "@type": "String",
+        "value": "10000"
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "6a75532e-9180-11ef-85b6-8ef66e23e16d",
+      "name": "Retry policy",
+      "creationDate": "2024-10-23T22:50:19.969+02:00",
+      "valueType": "STRING",
+      "value": {
+        "@type": "String",
+        "value": "NONE"
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "d922ce10-f472-11ee-bc2e-c203fde17743",
+      "name": "Tags for filtering calculation nodes (separated by ',' or ';')",
+      "creationDate": "2024-04-07T02:07:40.145+02:00",
+      "valueType": "STRING",
+      "value": {
+        "@type": "String",
+        "value": "prizes"
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "d922ce1a-f472-11ee-bc2e-c203fde17743",
+      "name": "Attach entity",
+      "creationDate": "2024-04-07T02:07:40.145+02:00",
+      "valueType": "STRING",
+      "value": {
+        "@type": "String",
+        "value": "true"
+      }
+    },
+    {
+      "persisted": true,
+      "owner": "CYODA",
+      "id": "d922ce24-f472-11ee-bc2e-c203fde17743",
+      "name": "Calculation response timeout (ms)",
+      "creationDate": "2024-04-07T02:07:40.145+02:00",
+      "valueType": "INTEGER",
+      "value": {
+        "@type": "String",
+        "value": "10000"
+      }
+    }
+  ]
+}

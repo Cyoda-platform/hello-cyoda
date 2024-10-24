@@ -1,1 +1,75 @@
-{"@bean": "com.cyoda.service.api.beans.AliasCatalogItemContainer", "aliases": []}
+{
+  "@bean": "com.cyoda.service.api.beans.AliasCatalogItemContainer",
+  "aliases": [
+    {
+      "id": "da549830-f860-11ee-8988-aa6470b059ab",
+      "name": "village",
+      "createDate": "2024-10-23T22:11:10.057+02:00",
+      "user": "CYODA",
+      "state": "CREATED",
+      "desc": "",
+      "entityClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "aliasDef": {
+        "name": "village",
+        "aliasPaths": {
+          "@meta": "com.cyoda.core.reports.columndefs.ReportAliasPathDef[]",
+          "value": [
+            {
+              "colDef": {
+                "fullPath": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[.Entity.LegalAddress.City]",
+                "parts": {
+                  "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                  "value": [
+                    {
+                      "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                      "path": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[.Entity.LegalAddress.City]",
+                      "type": "java.lang.String"
+                    }
+                  ]
+                },
+                "colType": "java.lang.String"
+              },
+              "mapperClass": "com.cyoda.core.reports.aliasmappers.BasicMapper"
+            }
+          ]
+        },
+        "aliasType": "java.lang.String"
+      }
+    },
+    {
+      "id": "cf8335f0-f857-11ee-88c7-aa6470b059ab",
+      "name": "city",
+      "createDate": "2024-10-23T22:11:10.008+02:00",
+      "user": "CYODA",
+      "state": "CREATED",
+      "desc": "",
+      "entityClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+      "aliasDef": {
+        "name": "city",
+        "aliasPaths": {
+          "@meta": "com.cyoda.core.reports.columndefs.ReportAliasPathDef[]",
+          "value": [
+            {
+              "colDef": {
+                "fullPath": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[.Entity.LegalAddress.City]",
+                "parts": {
+                  "@meta": "com.cyoda.core.reports.columndefs.ReportColPartDef[]",
+                  "value": [
+                    {
+                      "rootClass": "com.cyoda.tdb.model.treenode.TreeNodeEntity",
+                      "path": "members.[*]@com#cyoda#tdb#model#treenode#NodeInfo.value@com#cyoda#tdb#model#treenode#PersistedValueMaps.strings.[.Entity.LegalAddress.City]",
+                      "type": "java.lang.String"
+                    }
+                  ]
+                },
+                "colType": "java.lang.String"
+              },
+              "mapperClass": "com.cyoda.core.reports.aliasmappers.BasicMapper"
+            }
+          ]
+        },
+        "aliasType": "java.lang.String"
+      }
+    }
+  ]
+}
