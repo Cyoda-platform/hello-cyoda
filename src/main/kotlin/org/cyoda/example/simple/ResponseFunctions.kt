@@ -5,7 +5,7 @@ import org.cyoda.cloud.api.event.processing.EntityProcessorCalculationResponse
 
 fun EntityProcessorCalculationRequest.asResponse() =
     EntityProcessorCalculationResponse().also {
-        it.owner = this.owner
+        it.id = this.id
         it.entityId = this.entityId
         it.requestId = this.requestId
     }

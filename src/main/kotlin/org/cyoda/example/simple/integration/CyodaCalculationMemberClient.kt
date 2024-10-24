@@ -1,4 +1,4 @@
-package org.cyoda.example.simple
+package org.cyoda.example.simple.integration
 
 
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -17,12 +17,11 @@ import kotlinx.coroutines.runBlocking
 import org.cyoda.cloud.api.event.common.BaseEvent
 import org.cyoda.cloud.api.event.common.CloudEventType
 import org.cyoda.cloud.api.event.common.Error
-import org.cyoda.cloud.api.event.processing.CalculationMemberJoinEvent
-import org.cyoda.cloud.api.event.processing.EntityProcessorCalculationRequest
-import org.cyoda.cloud.api.event.processing.EntityProcessorCalculationResponse
+import org.cyoda.cloud.api.event.processing.*
 import org.cyoda.cloud.api.grpc.CloudEventsServiceGrpc
+import org.cyoda.example.simple.Processor
+import org.cyoda.example.simple.asResponse
 import org.cyoda.example.simple.config.ClientConnectionProperties
-import org.cyoda.example.simple.integration.CyodaHttpClient
 import org.springframework.context.event.ContextRefreshedEvent
 import org.springframework.context.event.EventListener
 import org.springframework.http.HttpHeaders
@@ -110,7 +109,7 @@ class CyodaCalculationMemberClient(
     @EventListener(ContextRefreshedEvent::class)
     fun onApplicationEvent(contextRefreshedEvent: ContextRefreshedEvent) {
         sendEvent(CalculationMemberJoinEvent().apply {
-            this.owner = "CYODA"
+            this.id = UUID.randomUUID().toString()
             this.tags = listOf("default", "prizes")
         })
     }
@@ -119,7 +118,7 @@ class CyodaCalculationMemberClient(
         this.startStreaming(object : StreamObserver<CloudEvent> {
 
             override fun onNext(value: CloudEvent) {
-                logger.info { ">> Got EVENT:\n${value.type}" }
+                logger.debug { ">> Got EVENT:\n${value.type}" }
                 when (value.type) {
                     CloudEventType.ENTITY_PROCESSOR_CALCULATION_REQUEST.value() -> {
                         sendEvent(
@@ -132,8 +131,18 @@ class CyodaCalculationMemberClient(
                         )
                     }
 
+                    CloudEventType.CALCULATION_MEMBER_KEEP_ALIVE_EVENT.value() -> {
+                        objectMapper.readValue(
+                            value.textData,
+                            CalculationMemberKeepAliveEvent::class.java
+                        ).let {
+                            sendEvent(EventAckResponse().apply { this.sourceEventId = it.id })
+                        }
+                    }
+
+
                     else -> {
-                        logger.info { "Skipping message of type ${value.type} as no processing required" }
+                        logger.debug { "Skipping message of type ${value.type} as no processing required" }
                     }
                 }
             }
@@ -159,7 +168,7 @@ class CyodaCalculationMemberClient(
             )
         )
 
-        logger.info { "<< Sending EVENT:\n${event.logString()}" }
+        logger.debug { "<< Sending EVENT:\n${event.logString()}" }
 
         // stream observer is not thread safe, for production usage this should be managed by some pooling for such cases
         synchronized(streamingObserver) {
@@ -196,7 +205,7 @@ class DelegatingProcessor(
 ) {
     fun calculate(request: EntityProcessorCalculationRequest) =
         runBlocking(Dispatchers.IO) {
-            logger.info { "Start Processing" }
+            logger.info { "Start Processing with ${request.processorName}" }
             try {
                 processors[request.processorName]
                     ?.process(client, request)

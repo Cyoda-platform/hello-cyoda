@@ -4,10 +4,6 @@
   "title": "BaseEvent",
   "type": "object",
   "properties": {
-    "owner": {
-      "type": "string",
-      "description": "Tenant name."
-    },
     "success": {
       "type": "boolean",
       "description": "Flag indicates whether this message relates to some failure.",
@@ -28,16 +24,15 @@
         "message": {
           "type": "string",
           "description": "Error message."
-        },
-        "required": [
-          "code",
-          "message"
-        ]
-      }
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ]
     }
   },
   "required": [
-    "owner",
     "id"
   ]
 }
