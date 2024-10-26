@@ -11,6 +11,7 @@
     "EntityProcessorCalculationResponse",
     "EventAckResponse",
     "EntityCriteriaCalculationRequest",
-    "EntityCriteriaCalculationResponse"
+    "EntityCriteriaCalculationResponse",
+    "CalculationMemberKeepAliveEvent"
   ]
 }

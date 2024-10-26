@@ -219,6 +219,11 @@
                         <plugin>spring</plugin>
                         <plugin>kotlinx-serialization</plugin>
                     </compilerPlugins>
+                    <sourceDirs>
+                        <sourceDir>${project.basedir}/src/test/kotlin</sourceDir>
+                        <sourceDir>${project.basedir}/src/test/java</sourceDir>
+                        <sourceDir>${project.basedir}/target/generated-sources/src/main/java</sourceDir>
+                    </sourceDirs>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -241,6 +246,7 @@
                 <version>${jsonschema2pojo-maven-plugin.version}</version>
                 <configuration>
                     <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
+                    <outputDirectory>${project.build.directory}/generated-sources/src/main/java</outputDirectory>
                     <targetPackage>org.cyoda.cloud.api.event</targetPackage>
                     <!-- todo enable it back once clarifying why we are using <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget> here -->
                     <includeGeneratedAnnotation>false</includeGeneratedAnnotation>

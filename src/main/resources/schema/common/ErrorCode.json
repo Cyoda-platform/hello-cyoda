@@ -4,6 +4,7 @@
   "title": "ErrorCode",
   "type": "string",
   "enum": [
-    "SERVER_ERROR"
+    "SERVER_ERROR",
+    "CLIENT_ERROR"
   ]
 }
